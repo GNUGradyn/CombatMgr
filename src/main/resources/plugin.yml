@@ -2,3 +2,14 @@ name: CombatMgr
 version: '${project.version}'
 main: com.gradyn.combatmgr.CombatMgr
 api-version: 1.19
+
+permissions:
+  combatmgr.duel:
+    description: Allows a user to initiate a duel
+    default: op
+
+commands:
+  duel:
+    description: Initiate a duel with another user
+    usage: "/duel (username)"
+    permission: combatmgr.duel
