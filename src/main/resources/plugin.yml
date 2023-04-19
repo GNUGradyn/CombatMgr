@@ -1,0 +1,4 @@
+name: CombatMgr
+version: '${project.version}'
+main: com.gradyn.combatmgr.CombatMgr
+api-version: 1.19
