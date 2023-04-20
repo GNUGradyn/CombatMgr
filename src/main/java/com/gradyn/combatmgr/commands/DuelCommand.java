@@ -1,6 +1,8 @@
 package com.gradyn.combatmgr.commands;
 
+import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -24,10 +26,10 @@ public class DuelCommand implements CommandExecutor {
             return true;
         }
 
-        if (target.getUniqueId() == player.getUniqueId()) {
-            sender.sendMessage("You cannot duel yourself!");
-            return true;
-        }
+        // if (target.getUniqueId() == player.getUniqueId()) {
+        //    sender.sendMessage("You cannot duel yourself!");
+        //    return true;
+        // }
 
         return true;
     }
